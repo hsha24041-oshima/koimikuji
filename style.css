@@ -1,0 +1,25 @@
+body {
+    text-align: center;
+    background-color: rgb(231, 9, 9);
+    font-family: Arial, sans-serif;
+}
+
+h1{
+    color: rgb(255, 255, 255);
+}
+button{
+    padding: 10px;
+    font-size: 18px;
+    background-color: aliceblue;
+    color: rgb(255, 0, 0);
+    border:none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+button:hover{
+    background-color: aliceblue;
+}
+result{
+    margin-top: 20px;
+    font-size: 20px;
+}
