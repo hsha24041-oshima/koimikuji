@@ -19,7 +19,7 @@ button.addEventListener("click",function(){
     result.textContent = fortunes[(randomNumber)];
     
     if (resultText.includes("大吉")) {
-        result.style.color ="red";
+        result.style.color ="white";
         advice.textContent = "今日は積極的に行動しよう！";
     }else if (resultText.includes("凶")) {
         result.style.color ="blue";
