@@ -25,7 +25,7 @@ button.addEventListener("click",function(){
     }else if (resultText.includes("大凶")) {
         result.style.color ="blue";
          advice.textContent = "家で大人しく過ごそう";
-    }else (resultText.includes("中吉")); {
+    }else { (resultText.includes("中吉")); 
         result.style.color ="black";
          advice.textContent ="自分から話しかけてみよう！";
     }
