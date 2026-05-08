@@ -3,8 +3,7 @@ const fortunes=[
     "吉　焦らず行動するといいことがある！",
     "中吉　少し勇気を出すと良いことが起きる",
     "小吉　今日はゆっくり過ごそう",
-    "凶　無理せず慎重に行動しよう",
-    "大凶　相手に盲目になりすぎているかも"
+    "凶　無理せず慎重に行動しよう"
 ];
 
 const button = document.getElementById("omikuji-bt")
@@ -22,11 +21,11 @@ button.addEventListener("click",function(){
     if (resultText.includes("大吉")) {
         result.style.color ="red";
         advice.textContent = "今日は積極的に行動しよう！";
-    }else if (resultText.includes("大凶")) {
+    }else if (resultText.includes("凶")) {
         result.style.color ="blue";
          advice.textContent = "家で大人しく過ごそう";
     }else { (resultText.includes("中吉")); 
         result.style.color ="black";
-         advice.textContent ="自分から話しかけてみよう！";
+         advice.textContent ="";
     }
 });
