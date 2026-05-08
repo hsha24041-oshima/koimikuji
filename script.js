@@ -7,9 +7,9 @@ const fortunes=[
     "大凶　相手に盲目になりすぎているかも"
 ];
 
-const button = document.getElementById("omikuji-bt")
-const result = document.getElementById("result")
-
+const button = document.getElementById("omikuji-bt");
+const result = document.getElementById("result");
+const advice = document.getElementById("advice");
 button.addEventListener("click",function(){
     const randomNumber = Math.floor(Math.random()*fortunes.length);
     const resultText = fortunes[(randomNumber)]
@@ -18,11 +18,12 @@ button.addEventListener("click",function(){
     
     if (resultText.includes("大吉")) {
         result.style.color ="red";
-    }
-    if (resultText.includes("大凶")){
+        advice.textContent = "今日は積極的に行動しよう！";
+    }else if (resultText.includes("大凶")){
         result.style.color ="blue";
-    }
-    if (resultText.includes("中吉")){
+         advice.textContent = "家で大人しく過ごそう";
+    }else (resultText.includes("中吉")){
         result.style.color ="black";
+         advice.textContent ="自分から話しかけてみよう！"
     }
 });
